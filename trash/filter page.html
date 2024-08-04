@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="page-wrapper">
+    <h1 class="page-title">Menswear</h1>
+    <div class="sidebar">
+       <div class="sidebar-container">
+          <div class="filter filter-custom">
+             <div class="filter-body">
+                <p><a href="#">New arrivals</a></p>
+                <p><a href="#">Clothing</a></p>
+                <p><a href="#">Scarves</a></p>
+                <p><a href="#">Accessories</a></p>
+                <p><a href="#">Shoes</a></p>
+                <p><a href="#">Fragrance</a></p>
+                <p><a href="#">Gifts</a></p>
+                <p class="strong"><a href="#">+ more categories</a></p>
+             </div>
+          </div>
+       </div>
+       <div class="sidebar-container active">
+          <div class="filter filter-default">
+             <a href="#" class="filter-head">
+                Brand
+             </a>
+             <div class="collapse">
+                <div class="filter-body">
+                   <a href="#" class="filter-item active">Adidas</a>
+                   <a href="#" class="filter-item">AG Jeans</a>
+                   <a href="#" class="filter-item">Alexander Mqueen</a>
+                   <a href="#" class="filter-item">Alexander Wang</a>
+                   <a href="#" class="filter-item">Asics</a>
+                   <a href="#" class="filter-item">Balenciaga</a>
+                   <a href="#" class="filter-item">Balmain</a>
+                   <a href="#" class="filter-item">Bape</a>
+                   <a href="#" class="filter-item">Bremont</a>
+                   <a href="#" class="filter-item">Burberry</a>
+                   <a href="#" class="filter-item">Calvin Klein</a>
+                   <a href="#" class="filter-item">Canada Goose</a>
+                </div>
+             </div>
+          </div>
+          <div class="filter filter-default">
+             <a href="#" class="filter-head">
+                Price
+             </a>
+             <div class="filter-body">
+                <a href="#" class="filter-item">Option</a>
+             </div>
+          </div>
+          <div class="filter filter-default">
+             <a href="#" class="filter-head">
+                Size
+             </a>
+             <div class="filter-body">
+                <a href="#" class="filter-item">Option</a>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="content">
+       <div id="card-grid" class="card-grid">
+          <div class="card-item">
+             <div class="card">
+                <div class="card-head">
+                   <div class="faux-elem"></div>
+                </div>
+                <div class="card-body"><br><br></div>
+                <div class="card-body"><br><br></div>
+             </div>
+          </div>
+          <div class="card-item">
+             <div class="card">
+                <div class="card-head">
+                   <div class="faux-elem"></div>
+                </div>
+                <div class="card-body"><br><br></div>
+                <div class="card-body"><br><br></div>
+             </div>
+          </div>
+          <div class="card-item">
+             <div class="card">
+                <div class="card-head">
+                   <div class="faux-elem"></div>
+                </div>
+                <div class="card-body"><br><br></div>
+                <div class="card-body"><br><br></div>
+             </div>
+          </div>
+          <div class="card-item">
+             <div class="card">
+                <div class="card-head">
+                   <div class="faux-elem"></div>
+                </div>
+                <div class="card-body"><br><br></div>
+                <div class="card-body"><br><br></div>
+             </div>
+          </div>
+          <div class="card-item">
+             <div class="card">
+                <div class="card-head">
+                   <div class="faux-elem"></div>
+                </div>
+                <div class="card-body"><br><br></div>
+                <div class="card-body"><br><br></div>
+             </div>
+          </div>
+          <div class="card-item">
+             <div class="card">
+                <div class="card-head">
+                   <div class="faux-elem"></div>
+                </div>
+                <div class="card-body"><br><br></div>
+                <div class="card-body"><br><br></div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+<style>
+    // Variables you should know about:
+
+$minimum-screen-width:        320px;
+// Breaking points:
+// Extra small screen / phone
+$screen-xs:                   480px !default;
+$screen-xs-min:               $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                   768px !default;
+$screen-sm-min:               $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                   990px !default;
+$screen-md-min:               $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                   1260px !default;
+$screen-lg-min:               $screen-lg !default;
+
+$screen-xs-max:               ($screen-sm-min - 1) !default;
+$screen-sm-max:               ($screen-md-min - 1) !default;
+$screen-md-max:               ($screen-lg-min - 1) !default;
+
+$padding-base-horizontal:     15px !default;
+$padding-base-vertical:       15px !default;
+$grid-gutter-width:           30px !default;
+
+$page-wrapper-width-xs:       100% !default;
+$page-wrapper-width-sm:       ($screen-sm - $grid-gutter-width - 30px) !default;
+$page-wrapper-width-md:       ($screen-md - $grid-gutter-width - 30px) !default;
+$page-wrapper-width-lg:       ($screen-lg - $grid-gutter-width - 30px) !default;
+
+$font-size-base:              14px;
+$line-height-base:            1.428571429 !default; // 20/14
+$line-height-computed:        floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+$font-size-h1:                  floor(($font-size-base * 2.300)) !default;
+$font-size-h2:                  floor(($font-size-base * 1.800)) !default;
+$font-size-h3:                  floor(($font-size-base * 1.500)) !default;
+$font-size-h4:                  floor(($font-size-base * 1.25)) !default;
+$font-size-h5:                  ceil(($font-size-base * 1)) !default;
+
+$sidebar-width: 240px;
+
+// Mixins
+@mixin clearfix() { //courtesy of bootstrap
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin sidebar-layout () {
+   
+}
+
+// Custom checkboxes and radio buttons
+@mixin checkbox-base() {
+    content: '';
+    background: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    margin: 2px;
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: inset 0 0 0 8px #fff;
+    border-radius: 2px;
+    transition: box-shadow .1s ease-in-out;
+}
+
+@mixin checkbox-checked() {
+    background: #F46036;
+    border-color: #F46036;
+    box-shadow: inset 0px 0px 0px 3px #fff;
+}
+
+@mixin checkbox-focus() {
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+@mixin checkbox-disabled() {
+    cursor: not-allowed;
+    opacity: .4;
+}
+
+@mixin caret($color: #444) {
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 6px 6px 0 6px;
+   border-color: $color transparent transparent transparent;
+}
+
+
+// Reset
+html, body {
+   margin: 0;
+   padding:0;
+}
+html {
+   height: 100%;
+}
+body {
+   min-height: 100%;
+   background-color: #f1f2f3;
+   font-family: 'Roboto', sans-serif;
+   font-size: $font-size-base;
+   font-weight: 400;
+   line-height: $line-height-base;
+   min-width: $minimum-screen-width;
+}
+*, *:before, *:after {
+   box-sizing: border-box;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+  font-weight: 400;
+  margin-top: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
+}
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+
+p {
+   margin: 0 0 10px;
+   &:last-child {
+      margin:0;
+   }
+}
+a {
+    color: #005eb8;
+    text-decoration: none;
+}
+small,
+.small {
+  font-size: floor($font-size-base * 0.75);
+}
+
+strong,
+.strong {
+  font-weight: 700;
+}
+
+// Utilities
+.caret {
+   display: inline-block;
+   @include caret();
+}
+.faux-elem {
+   padding-bottom: 100%;
+}
+.card-item {
+   width: 100%;
+   display: block;
+   padding: 5px;
+   float:left;
+   .card {
+      background-color: #fff;
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1);
+      transition: all .15s cubic-bezier(.4,0,.2,1);
+      position: relative;
+      border-radius: 3px;
+      &:hover {
+         transform: translateY(-1px);
+         box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+      }
+   }
+   .card-head {
+      padding: 10px 15px;
+      display:block;
+      border-radius: 3px 3px 0 0;
+      border-bottom: 1px solid transparent;
+      &:last-child {
+         border-radius: 3px;
+      }
+   }
+   .card-body {
+      padding: 10px 15px;
+      display:block;
+      + .card-body {
+         border-top: 1px solid transparent;
+      }
+      &:last-child {
+         border-radius: 0 0 3px 3px;
+      }
+   }
+}
+
+.card-grid {
+   margin: -5px;
+   @iclude clearfix();
+}
+
+// Layout
+.page-wrapper {
+   display:block;
+   margin:0 auto;
+   padding: 30px $grid-gutter-width / 2;
+   width: $page-wrapper-width-xs;
+   @include clearfix();
+   
+   @media (min-width: $screen-sm-min) {
+      width: $page-wrapper-width-sm;
+   }
+   @media (min-width: $screen-md-min) {
+      width: $page-wrapper-width-md;
+   }
+   @media (min-width: $screen-lg-min) {
+      width: $page-wrapper-width-lg;
+   }
+}
+
+.sidebar {
+   @media (min-width: $screen-sm-min) {
+      float: left;
+      padding-right: 20px;
+      width: $sidebar-width;
+      + .content {
+         width: $page-wrapper-width-sm - $grid-gutter-width - $sidebar-width;
+      }
+   }
+   @media (min-width: $screen-md-min) {
+      + .content {
+         width: $page-wrapper-width-md - $grid-gutter-width - $sidebar-width;
+      }
+   }
+   @media (min-width: $screen-lg-min) {
+      + .content {
+         width: $page-wrapper-width-lg - $grid-gutter-width - $sidebar-width;
+      }
+   }
+}
+.content {
+   .card-item {
+      width: 50%;
+   }
+   @media (min-width: $screen-sm-min) {
+      float: left;
+      .card-item {
+         width: ($page-wrapper-width-sm - $grid-gutter-width - $sidebar-width) / 2;
+      }
+   }
+   @media (min-width: $screen-md-min) {
+      .card-item {
+         width: ($page-wrapper-width-md - $grid-gutter-width - $sidebar-width) / 3;
+      }
+   }
+   @media (min-width: $screen-lg-min) {
+      .card-item {
+         width: ($page-wrapper-width-lg - $grid-gutter-width - $sidebar-width) / 4;
+      }
+   }
+}
+
+
+.filter {
+    .filter-item {
+        display:block;
+        margin: 5px 0;
+        touch-action: manipulation;
+        user-select: none;
+        position: relative;
+        line-height: $line-height-computed;
+        min-height: $line-height-computed;
+        padding-left: 30px;
+        color: #444;
+        text-decoration: none;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include checkbox-base();
+        }
+        &.active:before {
+            @include checkbox-checked();
+        }
+        &:focus:before {
+            @include checkbox-focus();
+        }
+        &.disabled {
+            color: #e3e3e3;
+            &:before {
+                @include checkbox-disabled();
+            }
+        }
+    }
+    .filter-item .filter-item-radio {
+        &:before {
+            border-radius: 50%;
+        }
+    }
+   
+   & {
+      background-color: #fff;
+      margin: 0;
+      position:relative;
+      @media (min-width: $screen-sm-min) {
+         box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.1);
+         margin-bottom: 10px;
+         border: 1px solid transparent;
+         border-radius: 3px;
+      }
+   }
+}
+
+.filter-body {
+   padding: 10px 15px;
+   display:block;
+   overflow:hidden;
+   overflow-y:auto;
+   + .filter-body {
+      border-top: 1px solid transparent;
+   }
+   @media (max-width: $screen-xs-max) {
+      background-color: #f9f9f9;
+   }
+   @media (min-width: $screen-sm-min) {
+      & {
+         max-height: 200px;
+      }
+      &:last-child {
+         border-radius: 0 0 3px 3px;
+      }
+   }
+}
+
+.filter-head {
+   padding: 10px 15px;
+   display:block;
+   position: relative;
+   color: #444;
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+   &:after {
+      position: absolute;
+      top: 17px;
+      right: 15px;
+      content: '';
+      @include caret();
+      z-index: 1;
+   }
+   &.active:after {
+      border-color: transparent transparent #444 transparent;
+   }
+   @media (min-width: $screen-sm-min) {
+      border-radius: 3px 3px 0 0;
+   }
+}
+
+.filter-default {
+   .filter-head,.filter-body {
+      border-color: #eee;
+   }
+}
+
+.filter-custom {
+   .filter-head {
+      border: none;
+   }
+   .filter-body {
+      background-color: #fafafa;
+      max-height: none;
+   }
+   @media (min-width: $screen-sm-min) {
+      
+   }
+}
+
+.sidebar-container {
+   @media (max-width: $screen-xs-max) {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+      overflow-y: auto;
+      background-color: #fff;
+      transform: translate3d(-100%, 0, 0);
+      transition: transform .2s ease-in-out, 
+                  -webkit-transform .2s ease-in-out;
+      z-index: 20;
+      &.active {
+         transform: translate3d(0, 0, 0);
+      }
+      & + & {
+         z-index: 21;
+      }
+   }
+}
+</style> 
+ <script>
+    var cardGrid = document.getElementById('card-grid');
+var cardItem = cardGrid.querySelector('.card-item');
+
+cardGrid.addEventListener('click', function(e){
+ 
+   console.log(e.target);
+});
+ </script>   
+</body>
+</html>

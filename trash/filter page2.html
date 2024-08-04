@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="filter">
+		<div class="checkbox"><label><input type="checkbox" rel="businessIntelligence" onchange="change()">Business Intelligence and Service Monitoring</label></div>
+		<div class="checkbox" style="display: none;"><label><input type="checkbox" rel="communication" onchange="change()">Communication</label></div>
+		<div class="checkbox"><label><input type="checkbox" rel="emailWeb" onchange="change()">Email and Web Security</label></div>
+		<div class="checkbox" style="display: none;"><label><input type="checkbox" rel="endpoint" onchange="change()">Endpoint Security</label></div>
+		<div class="checkbox"><label><input type="checkbox" rel="compliance" onchange="change()">Governance and Compliance</label></div>
+		<div class="checkbox"><label><input type="checkbox" rel="identityMgmt" onchange="change()">Identity and Access Management</label></div>
+		<div class="checkbox"><label><input type="checkbox" rel="soar" onchange="change()">SOAR / SIEM</label></div>
+		<div class="checkbox"><label><input type="checkbox" rel="threatIntelligence" onchange="change()">Threat Intelligence</label></div>
+	</div>
+</div>
+<div class="tiles">
+	<div class="soar" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>SOAR / SIEM</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/adlumin-logo-tile.png" alt="Adlumin Logo"></div>
+				<div class="vendorTitle">
+					<h4>Adlumin</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>The KnowBe4 and Adlumin integration delivers their new Proactive Defense Program. This allows you to discover risks related to your security awareness program and automate your response processes.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/7621862341395" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="identityMgmt" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Identity &amp; Access Management</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/Microsoft-Azure-logo-tile.png" alt="Azure Logo"></div>
+				<div class="vendorTitle">
+					<h4>Azure</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>KnowBe4's SCIM integration with Azure allows you to leverage user data from your identity software provision and maintain your users within your KnowBe4 console.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/360053851814" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="soar" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>SOAR / SIEM</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/Blumira-logo-tile.png" alt="Blumira Logo"></div>
+				<div class="vendorTitle">
+					<h4>Blumira</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>Together, KnowBe4 and Blumira make security orchestration faster and easier. Integrate directly with Blumira Sensor and their cloud-based SIEM platform to centralize and respond to threats.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://www.blumira.com/integration/knowbe4-phisher/" target="_blank" rel="noopener">PhishER</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="emailWeb" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Email &amp; Web Security</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/cyren-logo-tile.png" alt="Cyren Inbox Security Logo"></div>
+				<div class="vendorTitle">
+					<h4>Cyren Inbox Security</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>Together, KnowBe4 and Cyren Inbox Security establish a new layer of automated security to detect and remediate phishing. Allow your users to scan or report an email easily while integrating with your security awareness and PhishER platforms.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/4411071693843" target="_blank" rel="noopener">KMSAT</a></li>
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/4411071693843" target="_blank" rel="noopener">PhishER</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="soar" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>SOAR / SIEM</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/d3-security-tile.png" alt="D3Security Logo"></div>
+				<div class="vendorTitle">
+					<h4>D3Security</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>KnowBe4, partnering with D3Security's XGEN SOAR platform, provides integrations for security automation, analysis, and incident response. Enrich your security team's threat intelligence to make better decisions.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/6348954801427" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="compliance" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Governance &amp; Compliance</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/drata-logo-tile.png" alt="Drata Logo"></div>
+				<div class="vendorTitle">
+					<h4>Drata</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>The KnowBe4 and Drata integration lets you continuously monitor and collect evidence of your security awareness training results, so you'll stay audit ready every day of the year.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/6822999325203" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="emailWeb" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Email &amp; Web Security</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/inky-logo-tile.png" alt="INKY Logo"></div>
+				<div class="vendorTitle">
+					<h4>INKY</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>KnowBe4 has partnered with INKY's email reporting button to integrate with our Security Awareness and PhishER platforms. Streamline via one reporting option to reduce redundancy and eliminate confusion.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://inkyops.atlassian.net/wiki/spaces/ICSS/pages/1658781795/KnowBe4+INKY+Integration" target="_blank" rel="noopener">KMSAT</a></li>
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/4407784622227" target="_blank" rel="noopener">PhishER</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="businessIntelligence communication" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Business Intelligence &amp; Service Monitoring</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/jira-logo-tile.png" alt="Jira Logo"></div>
+				<div class="vendorTitle">
+					<h4>Jira</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+					<div id="border" class="vendorDescription">
+						<p>The KnowBe4 and Atlassian Jira integration helps you automate governance and compliance tasks and stay prepared for audits. Give your team peace of mind while saving time and effort.</p>
+					</div>
+					<div id="border" class="kb4Products">
+						<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+						<div class="productWrap">
+							<ul class="docs">
+								<li><a href="https://support.knowbe4.com/hc/en-us/articles/6000519803795" target="_blank" rel="noopener">KCM GRC</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="identityMgmt" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Identity &amp; Access Management</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/jumpcloud-logo-tile.png" alt="JumpCloud Logo"></div>
+				<div class="vendorTitle">
+					<h4>JumpCloud</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>KnowBe4's SCIM integration with JumpCloud allows you to leverage user data from your identity software provision and maintain your users within your KnowBe4 console.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.jumpcloud.com/support/s/article/Identity-Management-with-KnowBe4" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="compliance" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Governance &amp; Compliance</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/jupiterOne-logo-tile.png" alt="JupiterOne Logo"></div>
+				<div class="vendorTitle">
+					<h4>JupiterOne</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>Together, KnowBe4 and JupiterOne (J1) integrate to see security risks across your entire cybersecurity ecosystem. Attain complete visibility of your security awareness efforts as they relate to these risks.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://community.askj1.com/kb/articles/1011-knowbe4-integration-with-jupiterone" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="identityMgmt" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Identity &amp; Access Management</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/onelogin-logo-tile.png" alt="OneLogin Logo"></div>
+				<div class="vendorTitle">
+					<h4>OneLogin</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>KnowBe4's SCIM integration with OneLogin allows you to leverage user data from your identity software provision and maintain your users within your KnowBe4 console.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/5278551802003" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="soar" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>SOAR / SIEM</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/swimlane-logo-tile.png" alt="Swimlane Logo"></div>
+				<div class="vendorTitle">
+					<h4>Swimlane</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>KnowBe4, partnering with the Swimlane SOAR platform, provides integrations for security automation, analysis, and incident response. Enrich your security awareness program with the visibility to make better decisions.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://apphub.swimlane.com/swimbundles/swimlane/sw_knowbe4" target="_blank" rel="noopener">KMSAT</a></li>
+							<li><a href="https://apphub.swimlane.com/swimbundles/swimlane/sw_knowbe4_phisher" target="_blank" rel="noopener">PhishER</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="compliance" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Governance &amp; Compliance</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/tessian-logo-tile.png" alt="Tessian Logo"></div>
+				<div class="vendorTitle">
+					<h4>Tessian</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>Together, KnowBe4 and Tessian integrate to see security risks across your entire cybersecurity ecosystem. Attain complete visibility of your security awareness efforts as they relate to these risks.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://www.tessian.com/partners/knowbe4/" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="soar" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>SOAR / SIEM</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/tines-logo-tile.png" alt="Tines Logo"></div>
+				<div class="vendorTitle">
+					<h4>Tines</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>The partnership between KnowBe4 and Tines allows you to integrate for threat intelligence, playbook automation, and more. Offload repetitive workflows and increase your impact on your organization's security posture.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/4409410658323" target="_blank" rel="noopener">KMSAT</a></li>
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/4403664433683" target="_blank" rel="noopener">PhishER</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="compliance" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Governance &amp; Compliance</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/vanta-logo-tile.png" alt="Vanta Logo"></div>
+				<div class="vendorTitle">
+					<h4>Vanta</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>The KnowBe4 and Vanta integration lets you continuously monitor and collect evidence of your security awareness training results, so you'll stay audit ready every day of the year.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://help.vanta.com/hc/en-us/articles/4409230659604-How-to-set-up-the-KnowBe4-integration" target="_blank" rel="noopener">KMSAT</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="threatIntelligence" style="display: block;">
+		<div class="filterTile">
+			<div class="tileDetails">
+				<div class="catCallout">
+					<p>Threat Intelligence</p>
+				</div>
+				<div class="vendorLogo"><img src="https://www.knowbe4.com/hubfs/virustotal-logo-tile.png" alt="VirusTotal Logo"></div>
+				<div class="vendorTitle">
+					<h4>VirusTotal</h4>
+				</div>
+				<div class="learn">
+					<p><a href="#" class="int">Learn More</a></p>
+				</div>
+				<div class="overlay">
+				<div id="border" class="vendorDescription">
+					<p>Use the KnowBe4 integration with VirusTotal to enrich the data in your PhishER SOAR console to make better decisions on potentially malicious emails.</p>
+				</div>
+				<div id="border" class="kb4Products">
+					<p style="text-align: center; font-variant-caps: all-small-caps; font-size: 18px; font-weight: 600;">Support Documents</p>
+					<div class="productWrap">
+						<ul class="docs">
+							<li><a href="https://support.knowbe4.com/hc/en-us/articles/360013919314#VT" target="_blank" rel="noopener">PhishER</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+     /* ----- Hero Section ----- */
+  #heroBanner.fullwidth-bg {
+    background-image: url("https://www.knowbe4.com/hubfs/KB4-CON_Blue-3.png");
+    padding: 45px 0px 45px;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
+  
+  #heroBanner.fullwidth-bg h1 {
+    font-size: 3.429em;
+    line-height: 47px;
+    color: #ffffff;
+  }
+  #heroBanner.fullwidth-bg h2 {
+    color: #fff;
+    text-align: left;
+    line-height: 1.25em;
+  }
+  #heroBanner.fullwidth-bg .textWrap {
+    width: 100%;
+  }
+  /* ----- End Hero Section ----- */
+  /* ------ Flip Sidebar and Content for Mobile ------ */
+  @media (max-width: 567px) {
+    #mainWrap.span12 .row-fluid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .tileWrapper {
+      min-width: 350px;
+    }
+    #mainWrap.span12 .row-fluid .right {
+      order: 2;
+      width: 100%;
+      
+    }
+    #mainWrap.span12 .row-fluid .left {
+      order: 1;
+      width: 100%;
+      padding-top: 50px;
+    }
+  }
+  /* ------ End Flip Sidebar and Content for Mobile ------ */
+  
+  /* ----- Sidebar Filtering Menu ------ */
+  
+  .filteringMenuWrap {
+    background-color: #f26721;
+    padding: 15px 0px;
+    border-radius: 8px;
+  }
+  h3.cats {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #1d2127;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 25px;
+  }
+  .filteringMenuWrap ul#cats.filters {
+    
+  }
+  .filteringMenuWrap ul#cats.filters li {
+    padding: 5px 15px;
+  }
+  .filteringMenuWrap ul#cats.filters li:hover {
+    background-color: #cc6632;
+  }
+  .filteringMenuWrap ul#cats.filters li a {
+    color: #fff;
+    display: block;
+    font-weight: 600;
+  }
+  .filteringMenuWrap ul#cats.filters li a:hover {
+    text-decoration: none;
+  }
+  
+  /* ----- End Sidebar Filtering Menu ------ */
+  
+  /* ----- Tiles ------ */
+  .tiles {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #tiles.span9 .row-fluid-wrapper .row-fluid {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 567px) {
+    #tiles.span9 .row-number-7 .row-fluid {
+      margin-top: 30px;
+      margin-bottom: 30px !important;
+    }
+    #tiles.span9 .row-fluid-wrapper .row-fluid {
+      margin-bottom: -10px;
+   } 
+  }
+  a.tileLink:hover {
+    text-decoration: none;
+  }
+  #long.filterTile {
+     min-height: 460px;
+  }
+  .filterTile {
+    /*width: 100%;*/
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    border-radius: 8px;
+    padding: 20px;
+    /*margin-right: 3%;*/
+    border: 1px solid #ff5703;
+    flex-direction: column;
+    position: relative;
+    min-height: 390px;
+  }
+  .vendorLogo {
+    text-align: center;
+    min-height: 100px;
+  }
+  .vendorLogo img {
+    padding-top: 5px;
+    height: auto;
+    width: auto !important;
+    max-height: 85px;
+  }
+  .vendorTitle h4 {
+    font-weight: bold;
+    color: #f26721;
+    font-size: 16px;
+    display: none;
+  }
+  
+  .vendorDescription {
+    padding-bottom: 25px;
+  }
+  .kb4Product {
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+  }
+  .kb4Product a {
+    display: inline-block;
+  }
+  .kb4Product a:first-of-type {
+   margin-left: 0px !important; 
+  }
+  .kb4Product a:last-of-type {
+    margin-left: 25px;
+  } 
+  .kb4Product a img {
+    
+  }
+  .kb4Products {
+    padding-bottom: 20px;
+  }
+  #border.vendorDescription {
+    border-bottom: 1px solid #f26721;
+    padding: 20px 20px 0px 20px;
+    min-height: 160px;
+  }
+  .overlay p {
+    margin-bottom: 0px;
+  }
+  #border.kb4Products {
+    padding-top: 5px;
+  }
+  .productWrap {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .productWrap ul.docs {
+    display: flex;
+    overflow: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding-inline-start: 0px;
+    line-height: 11px;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  .productWrap ul.docs li {
+    list-style-type: none;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+    line-height: 16px;
+    padding-left: 10px;
+  }
+  .productWrap ul.docs li:last-of-type {
+    padding-right: 0px;
+    border-right: none;
+    padding-left: 10px;
+  }
+  @media (max-width: 567px) {
+    .tiles {
+      padding-left: 0px;
+      display: block;
+    }
+    .productWrap ul.docs {
+  
+    }
+  }
+  
+  /* --- Sidebar Menu Styles --- */
+  
+  .filteringMenuWrap ul#cats.filters {
+    padding-inline-start: 0px;
+    list-style-type: none;
+  }
+  
+  /* === End Sidebar Menu Styles --- */
+  
+/* --- Filters --- */
+  .filterRow {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+  }  
+  .filterRow .checkbox {
+    display: inline-flex;
+  }
+.filterRow .checkbox label {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 20px;
+    margin: 0 15px 15px 0;
+    border-bottom: 3px transparent solid;
+    transition: .3s ease border-bottom;
+    width: 352px;
+}
+  .filterRow label input[type="checkbox"] {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 5px;
+    height: 20px !important;
+    width: 20px !important;
+    transition: all .15s ease-out 0s;
+    background: #fafafa;
+    border: 1px solid #c1c1c1;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    padding: 0px;
+    margin: 0 10px 0 0;
+  }
+/* --- End Filters --- */  
+  
+/* --- Tiles (New Section) --- */
+  .tiles {
+    
+  }
+  .tiles .emailWeb, .tiles .communication, .tiles .endpoint, .tiles .soar, .tiles .compliance, .tiles .identityMgmt, .tiles .threatIntelligence, .tiles .businessIntelligence, .tiles .businessIntelligence.compliance {
+    margin-right: 2%;
+    margin-bottom: 3%;
+  }
+  .tiles .filterTile {
+    width: 300px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 3%;
+    border: 1px solid #ff5703;
+    flex-direction: column;
+    position: relative;
+    min-height: 225px;
+    max-height: 225px;
+  }
+  @media (max-width: 567px) {
+	.tiles .filterTile {
+      margin: 15px auto 25px auto;
+    }
+  }
+  .tiles .filterTile .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #676767;
+  }
+  .tiles .filterTile:hover .overlay {
+    opacity: 1;
+  }
+  .tiles .filterTile .overlay p {
+    color: #ffffff;
+  }
+  .catCallout p {
+    text-align: center;
+    font-family: Oswald;
+    color: #f16621;
+    font-size: 1rem;
+  }
+  .learn {
+    margin-top: 35px;
+  }
+  .learn p {
+    text-align: center;
+  }
+  .learn a.int {
+    padding: 10px 20px;
+    border: 2px solid #f26721;
+    color: #f26721;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .productWrap ul.docs li a {
+    padding: 5px 10px;
+    background: #f26721;
+    color: #ffffff;
+    display: inline-block;
+  }
+  .productWrap ul.docs li a:hover {
+    color: #ffffff;
+    background: #f88e3a;
+    text-decoration: none;
+  }
+</style>
+
+<script>
+function change(){
+    
+    var checkboxes = document.getElementsByClassName('checkbox');
+    var chekboxInputs = Array.from(checkboxes).map(a => a.querySelector('input'));
+    var allAreUnselected = chekboxInputs.every(function(elem){
+       return !elem.checked;
+    });
+    if(allAreUnselected){
+       chekboxInputs.forEach(function(input){
+          Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
+              item.style.display = 'block';
+            console.log("checked");
+          });
+       });
+    }
+    else {
+      chekboxInputs.forEach(function(input){
+          Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
+            item.style.display = input.checked ? 'block' : 'none';
+            console.log("unchecked");
+          });
+       });
+    }
+}
+change();
+</script>
+
+
+
+</head>
+<body class="   hs-content-id-81205297426 hs-site-page page hs-content-path-integrations hs-content-name-integrations  " style="">
+    <div class="header-container-wrapper">
+    <div class="header-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<div class="" data-global-widget-path="generated_global_groups/3746347323.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-5 ">
+<div class="row-fluid ">
+
+  <div id="subheader" class="fullwidth-bg mobile-display-none"><div class="page-center">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-6 ">
+<div class="row-fluid ">
+<div class="span3 widget-span widget-type-raw_html " style="padding: 15px 0px 0px 0px;" data-widget-type="raw_html" data-x="0" data-w="3">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_1614281772028377" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><div id="skip"><a href="#content">Skip to Main Content</a></div>
+<style>
+#skip a
+{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+#skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+} 
+</style>
+ <script>
+    
+function change(){
+    
+    var checkboxes = document.getElementsByClassName('checkbox');
+    var chekboxInputs = Array.from(checkboxes).map(a => a.querySelector('input'));
+    var allAreUnselected = chekboxInputs.every(function(elem){
+       return !elem.checked;
+    });
+    if(allAreUnselected){
+       chekboxInputs.forEach(function(input){
+          Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
+              item.style.display = 'block';
+           
+          });
+       });
+    }
+    else {
+      chekboxInputs.forEach(function(input){
+          Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function(item){
+            item.style.display = input.checked ? 'block' : 'none';
+             console.log("clicked on");
+          });
+       });
+    }
+}
+change();
+
+ </script>   
+</body>
+</html>

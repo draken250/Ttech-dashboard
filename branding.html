@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Multi-Step Form</title> -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ttech | Dashboard</title>
+  <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon"> 
+   <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="layer"></div>
+<!-- ! Body -->
+<!-- <a class="skip-link sr-only" href="#skip-target">Skip to content</a> -->
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-start">
+        <div class="sidebar-head">
+            <a href="index.html" class="logo-wrapper" title="Home">
+                <span class="sr-only">Home</span>
+                <!-- <span class="icon logo" aria-hidden="false"><img src="img/Ttech-removebg-preview.png" alt=""></span> -->
+                <div class="logo-text">
+                    <img src="img/Ttech-removebg-preview.png" alt="" width="150px">
+                </div>
+
+            </a>
+            <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+                <span class="sr-only">Toggle menu</span>
+                <span class="icon menu-toggle" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="sidebar-body">
+            <ul class="sidebar-body-menu">
+                <li>
+                    <a  href="index.html"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+                </li>
+                <li>
+                  <a class="active" href="branding.html"><span class="icon document" aria-hidden="true"></span>branding</a>
+              </li>
+                <li>
+                    <a class="show-cat-btn" href="branding.html">
+                      <span class="icon document" aria-hidden="true"></span>branding
+                      <span class="category__btn transparent-btn" title="Open list">
+                          <span class="sr-only">Open list</span>
+                          <span class="icon arrow-down" aria-hidden="true"></span>
+                      </span>
+                  </a>
+                    <ul class="cat-sub-menu">
+                        <li>
+                            <a href="website-overview.html">Website overview</a>
+                        </li>
+                        <li>
+                            <a href="Manage-website.html">Manage website</a>
+                        </li>
+                        
+                        <li>
+                          <a href="Domain-name.html"> domain name</a>
+                      </li>
+                        <li>
+                          <a href="Features.html"> automations(Features)</a>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="show-cat-btn" href="##">
+                        <span class="icon folder" aria-hidden="true"></span> Brand design
+                        <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                            <span class="icon arrow-down" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="cat-sub-menu">
+                        <li>
+                            <a href="software-overview.html">software-overview</a>
+                        </li>
+                        <li>
+                            <a href="manage-softare.html"> manage softwares</a>
+                        </li>
+                        <li>
+                            <a href="custome-software.html"> Custome software</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="show-cat-btn" href="##">
+                        <span class="icon image" aria-hidden="true"></span>structure
+                        <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                            <span class="icon arrow-down" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="cat-sub-menu">
+                        <li>
+                            <a href="media-01.html">S.M.M Overview</a>
+                        </li>
+                        <li>
+                            <a href="media-02.html">Manage smm</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="show-cat-btn" href="##">
+                        <span class="icon paper" aria-hidden="true"></span>Legal documents
+                        <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                            <span class="icon arrow-down" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="cat-sub-menu">
+                        <li>
+                            <a href="brand-overview.html">Brand Overview</a>
+                        </li>
+                        <li>
+                            <a href="new-page.html">Logo design</a>
+                        </li>
+                        <li>
+                            <a href="media-02.html">Packaging</a>
+                        </li>
+                        <li>
+                            <a href="media-02.html">Graphics design</a>
+                        </li> 
+                        <li>
+                            <a href="media-02.html">Flyer</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="comments.html">
+                        <span class="icon message" aria-hidden="true"></span>
+                        Comments
+                    </a>
+                    <span class="msg-counter">7</span>
+                </li> -->
+            </ul>
+            <span class="system-menu__title">system</span>
+            <ul class="sidebar-body-menu">
+                <!-- <li>
+                    <a href="appearance.html"><span class="icon edit" aria-hidden="true"></span>Appearance</a>
+                </li> -->
+                <li>
+                    <a class="show-cat-btn" href="##">
+                        <span class="icon category" aria-hidden="true"></span>Extentions
+                        <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                            <span class="icon arrow-down" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="cat-sub-menu">
+                        <li>
+                            <a href="extention-01.html">Extentions-01</a>
+                        </li>
+                        <li>
+                            <a href="extention-02.html">Extentions-02</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a class="show-cat-btn" href="##">
+                        <span class="icon user-3" aria-hidden="true"></span>Users
+                        <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                            <span class="icon arrow-down" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="cat-sub-menu">
+                        <li>
+                            <a href="users-01.html">Users-01</a>
+                        </li>
+                        <li>
+                            <a href="users-02.html">Users-02</a>
+                        </li>
+                    </ul>
+                </li> -->
+                <li>
+                    <a href="##"><span class="icon setting" aria-hidden="true"></span>Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar-footer">
+        <a href="##" class="sidebar-user">
+            <span class="sidebar-user-img">
+                <picture><source srcset="./img/avatar/avatar-illustrated-01.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
+            </span>
+            <div class="sidebar-user-info">
+                <span class="sidebar-user__title">Nafisa Sh.</span>
+                <span class="sidebar-user__subtitle">Support manager</span>
+            </div>
+        </a>
+    </div>
+</aside>
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    <nav class="main-nav--bg">
+  <div class="container main-nav">
+    <div class="main-nav-start">
+      <div class="search-wrapper">
+        <i data-feather="search" aria-hidden="true"></i>
+        <input type="text" placeholder="Enter keywords ..." required>
+      </div>
+    </div>
+    <div class="main-nav-end">
+      <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+        <span class="sr-only">Toggle menu</span>
+        <span class="icon menu-toggle--gray" aria-hidden="true"></span>
+      </button>
+      <div class="lang-switcher-wrapper">
+        <button class="lang-switcher transparent-btn" type="button">
+          EN
+          <i data-feather="chevron-down" aria-hidden="true"></i>
+        </button>
+        <ul class="lang-menu dropdown">
+          <li><a href="##">English</a></li>
+          <li><a href="##">French</a></li>
+          <li><a href="##">kinyarwanda</a></li>
+        </ul>
+      </div>
+      <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
+        <span class="sr-only">Switch theme</span>
+        <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
+        <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
+      </button>
+      <div class="notification-wrapper">
+        <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
+          <span class="sr-only">To messages</span>
+          <span class="icon notification active" aria-hidden="true"></span>
+        </button>
+        <ul class="users-item-dropdown notification-dropdown dropdown">
+          <li>
+            <a href="##">
+              <div class="notification-dropdown-icon info">
+                <i data-feather="check"></i>
+              </div>
+              <div class="notification-dropdown-text">
+                <span class="notification-dropdown__title">System just updated</span>
+                <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
+                  here.</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="##">
+              <div class="notification-dropdown-icon danger">
+                <i data-feather="info" aria-hidden="true"></i>
+              </div>
+              <div class="notification-dropdown-text">
+                <span class="notification-dropdown__title">The cache is full!</span>
+                <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
+                  interfere ...</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="##">
+              <div class="notification-dropdown-icon info">
+                <i data-feather="check" aria-hidden="true"></i>
+              </div>
+              <div class="notification-dropdown-text">
+                <span class="notification-dropdown__title">New Subscriber here!</span>
+                <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="link-to-page" href="##">Go to Notifications page</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-user-wrapper">
+        <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
+          <span class="sr-only">My profile</span>
+          <span class="nav-user-img">
+            <picture><source srcset="./img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+          </span>
+        </button>
+        <ul class="users-item-dropdown nav-user-dropdown dropdown">
+          <li><a href="##">
+              <i data-feather="user" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a></li>
+          <li><a href="##">
+              <i data-feather="settings" aria-hidden="true"></i>
+              <span>Account settings</span>
+            </a></li>
+          <li><a class="danger" href="##">
+              <i data-feather="log-out" aria-hidden="true"></i>
+              <span>Log out</span>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+    <!-- ! Main -->
+    <main class="main users chart-page" id="skip-target">
+      <div class="container">
+        <h2 class="main-title">Branding</h2>
+       
+        <div class="col-md-6 col-xl-8">
+          <article class="stat-cards-item">
+
+            <div class="stat-cards-info">
+
+                
+              <form id="multiStepForm">
+                 <div class="step">
+                   <h2 class="stat-cards-info__num">1.1. Mission Statement</h2>
+                   <p class="stat-cards-info__title">This is to help your brand resonate with your client. people connect more with a brand that has a purpose than a brand that just have some thing they want to sell them </p>
+                   <textarea id="missionStatement" placeholder="Enter your mission statement. E.g., 'My mission is to reduce the unemployment rate in Rwanda(specify region to make people feel included) through venture startups." required></textarea>
+                   <div class="nav-buttons">
+                     <button class=" next form-btn primary-default-btn transparent-btn" type="button" >Next</button>
+                   </div>
+                 </div>
+                 <div class="step">
+                   <h2 class="stat-cards-info__num">1.2. Vision Statement</h2>
+                   <p class="stat-cards-info__title">the vission statement is to set a clear goal for your brand this will allow you to give people knowledge of what your desigere outcome will be in a given time frame.</p>
+                   <textarea id="visionStatement" placeholder="Enter your vision statement. E.g., 'We envision a country  where themajority of people are hardworkers with a job and a ot of entrepenurs who work together to improve the service and their own country through their own bussines opportunities." required></textarea>
+                   <div class="nav-buttons">
+                     <button class="prev form-btn primary-default-btn transparent-btn" type="button" >Previous</button>
+                     <button class="next form-btn primary-default-btn transparent-btn" type="button" >Next</button>
+                    </div>
+                 </div>
+                <div class="step">
+                  <h2 class="stat-cards-info__num">1.3. Core Values</h2>
+                  <p class="stat-cards-info__title"> the core values is something the client invison you brand with . when a you say you are innovative the client start expecting new staff frm ypu and think of you when their is brak through in your indusrty.<br><b>ps<b> select 5 values</p>
+                    <div class="selectorz">
+                   <select  id="coreValuesSelect" multiple="multiple" required>
+                      <option value="Integrity"> Integrity</option>
+                      <option value="Accountability"> Accountability</option>
+                      <option value="Diligence"> Diligence</option>
+                      <option value="Perseverance"> Perseverance</option>
+                      <option value="Discipline"> Discipline</option>
+                      <option value="Honesty"> Honesty</option>
+                      <option value="Respect"> Respect</option>
+                      <option value="Transparency"> Transparency</option>
+                      <option value="Innovation"> Innovation</option>
+                      <option value="Collaboration"> Collaboration</option>
+                   </select> 
+
+                    </div>
+                  <div class="nav-buttons">
+                    <button class="prev form-btn primary-default-btn transparent-btn" type="button" >Previous</button>
+                    <button class="form-btn primary-default-btn transparent-btn" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+              
+
+            </div>
+            
+          </article>
+        </div>
+      </div>
+<!--       
+<script>
+  function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;      
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script> -->
+    </main>
+    <!-- ! Footer -->
+    <footer class="footer">
+  <div class="container footer--flex">
+    <div class="footer-start">
+      <p>2024 © Ttech Dashboard - <a href="elegant-dashboard.com" target="_blank"
+          rel="noopener noreferrer">ITK-INDUSTRIES</a></p>
+    </div>
+    <ul class="footer-end">
+      <li><a href="##">About</a></li>
+      <li><a href="##">Support</a></li>
+      <li><a href="##">Puchase</a></li>
+    </ul>
+  </div>
+</footer>
+  </div>
+</div>
+ Chart library
+<script src="./plugins/chart.min.js"></script>
+Icons library
+<script src="plugins/feather.min.js"></script>
+Custom scripts
+ <script src="js/script.js"></script> 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const steps = document.querySelectorAll('.step');
+    const nextButtons = document.querySelectorAll('.next');
+    const prevButtons = document.querySelectorAll('.prev');
+    let currentStep = 0;
+
+    function showStep(step) {
+        steps.forEach((stepElement, index) => {
+            stepElement.classList.toggle('active', index === step);
+        });
+    }
+
+    nextButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            currentStep = Math.min(currentStep + 1, steps.length - 1);
+            showStep(currentStep);
+        });
+    });
+
+    prevButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            currentStep = Math.max(currentStep - 1, 0);
+            showStep(currentStep);
+        });
+    });
+
+    showStep(currentStep);
+
+    // Initialize Select2
+    $('#coreValuesSelect').select2({
+        placeholder: "Select your core values",
+        allowClear: true
+    });
+
+    // Form submission
+    document.getElementById('multiStepForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const selectedValues = $('#coreValuesSelect').val();
+        if (selectedValues.length < 5) {
+            alert('Please select at least 5 core values.');
+        } else {
+            alert('Form submitted successfully!');
+        }
+    });
+});
+
+</script>
+ <style>
+  .row{
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.24);
+      border-radius: 25px;
+      width: 600px;
+      /* width: 33%; */
+      /* height: 200px; */
+  }
+  .tablink{
+      padding: 10px 13px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.196);
+      box-shadow: inset;
+      border: none;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: white;
+      
+  }
+  .tabcontent{
+      border-radius: 14px;
+      margin-left: 25px;
+      margin-top: 20px;
+  }
+  
+form {
+    /* max-width: 500px; */
+    /* margin: auto; */
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    /* background-color: #f9f9f9; */
+} 
+textarea{
+  width: 100%;
+  height: 120px;
+  border-radius: 6px;
+  background-color:rgba(255, 255, 255, 0.132);
+  border: solid rgba(128, 128, 128, 0.265);
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.nav-buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+.selectorz{
+  width: 100%;
+}
+.selectorz select{
+  width: 600px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.prev {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: text;
+    padding: 5px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4; 
+     border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    color: #333;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #999;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+</style> 
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const steps = document.querySelectorAll('.step');
+    const nextButtons = document.querySelectorAll('.next');
+    const prevButtons = document.querySelectorAll('.prev');
+    let currentStep = 0;
+
+    function showStep(step) {
+        steps.forEach((stepElement, index) => {
+            stepElement.classList.toggle('active', index === step);
+        });
+    }
+
+    nextButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            currentStep = Math.min(currentStep + 1, steps.length - 1);
+            showStep(currentStep);
+        });
+    });
+
+    prevButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            currentStep = Math.max(currentStep - 1, 0);
+            showStep(currentStep);
+        });
+    });
+
+    showStep(currentStep);
+
+    // Initialize Select2
+    $('#coreValuesSelect').select2({
+        placeholder: "Select your core values",
+        allowClear: true
+    });
+
+    // Form submission
+    document.getElementById('multiStepForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const selectedValues = $('#coreValuesSelect').val();
+        if (selectedValues.length < 5) {
+            alert('Please select at least 5 core values.');
+        } else {
+            alert('Form submitted successfully!');
+        }
+    });
+});
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!-- <script src="scripts.js"></script> -->
+</html>
