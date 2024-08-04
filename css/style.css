@@ -2019,8 +2019,8 @@ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap; */
+  /* flex-wrap: wrap; */
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -4301,4 +4301,7 @@ label {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+}
+.logo-text{
+  margin-right: -100px;
 }
