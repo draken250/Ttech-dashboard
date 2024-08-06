@@ -48,6 +48,7 @@ textarea{
 
 .step.active {
     display: block;
+    padding: 10px; 
 }
 
 .nav-buttons {
@@ -55,7 +56,7 @@ textarea{
     margin-top: 20px;
 }
 .selectorz{
-  width: 100%;
+  width: 100%; 
 }
 .selectorz select{
   width: 600px;
@@ -78,6 +79,7 @@ button.next {
 button.prev {
     background-color: #f1f1f1;
     color: black;
+    margin-top: 10px;
 }
 
 button[type="submit"] {

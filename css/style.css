@@ -207,7 +207,7 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none;
+  /* text-transform: none; */
 }
 
 /**
@@ -288,6 +288,9 @@ progress {
  */
 
 textarea {
+  overflow: auto;
+}
+select{
   overflow: auto;
 }
 
@@ -2687,7 +2690,7 @@ label {
   font-size: 18px;
   line-height: 1.22;
   color: #171717;
-  margin-bottom: 4px;
+  margin-bottom: 4px; 
 }
 
 .stat-cards-info__title {
